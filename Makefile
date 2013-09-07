@@ -7,13 +7,13 @@ htmls = $(addsuffix .html,$(addprefix src/,$(names)))
 all: site
 
 clean:
-	rm -f $(hss)
+	rm -rf html-build
 	rm -f $(htmls)
 
-$(htmls): src/%.html: html-build/%.hs
+$(htmls): src/%.html: html-build/%.hs html-src/%.meta
 	(cat html-src/$*.meta; echo; runghc $<) >$@
 
-$(hss): html-build/%.hs: html-src/%.hs_ html-src/%.meta | $(@D)
+$(hss): html-build/%.hs: html-src/%.hs_ | $(hss_dirs)
 	./genhs.bash $< >$@
 
 $(hss_dirs):
