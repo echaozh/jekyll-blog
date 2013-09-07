@@ -2,7 +2,7 @@
 layout: post
 title:  "My First Blog Post Here"
 date:   2013-09-28 12:27:27
-categories: meta
+tags: meta
 ---
 
 This is my very first blog post on this [Jekyll](http://jekyllrb.com) powered

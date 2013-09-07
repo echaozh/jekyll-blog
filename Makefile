@@ -1,4 +1,4 @@
-names = $(addprefix _layouts/,default post) index
+names = $(addprefix _layouts/,default post tag) index
 hss = $(addsuffix .hs,$(addprefix html-build/,$(names)))
 hss_dirs = $(sort $(dir $(hss)))
 htmls = $(addsuffix .html,$(addprefix src/,$(names)))
@@ -10,6 +10,7 @@ all: site
 clean:
 	rm -rf html-build
 	rm -f $(htmls)
+	rm -rf _site
 
 $(htmls): src/%.html: html-build/%.hs html-src/%.meta | $(htmls_dirs)
 	(cat html-src/$*.meta; echo; runghc $<) >$@
