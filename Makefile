@@ -1,6 +1,6 @@
 names = $(addprefix _layouts/,default post) index
 hss = $(addsuffix .hs,$(addprefix html-build/,$(names)))
-hss_dirs = $(dir $(hss))
+hss_dirs = $(sort $(dir $(hss)))
 htmls = $(addsuffix .html,$(addprefix src/,$(names)))
 
 
@@ -13,7 +13,7 @@ clean:
 $(htmls): src/%.html: html-build/%.hs
 	(cat html-src/$*.meta; echo; runghc $<) >$@
 
-$(hss): html-build/%.hs: html-src/%.hs_ html-src/%.meta | $(hss_dirs)
+$(hss): html-build/%.hs: html-src/%.hs_ html-src/%.meta | $(@D)
 	./genhs.bash $< >$@
 
 $(hss_dirs):
