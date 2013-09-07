@@ -1,0 +1,5 @@
+name: A Path Less Travelled
+markdown: redcarpet
+pygments: true
+source: src
+deploy: _site

@@ -1,0 +1,3 @@
+h2 "{{ page.title }}"
+p ! class_ "meta" $ "{{ page.date | date_to_string }}"
+H.div ! class_ "post" $ "{{ content }}"
