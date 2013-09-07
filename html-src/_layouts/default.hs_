@@ -22,3 +22,4 @@ docTypeHtml $ do
       br
       a ! href "https://weibo.com/echaozh" $ "On Weibo"
       br
+      a ! href "mailto:echaozh@gmail.com" $ "By Gmail"

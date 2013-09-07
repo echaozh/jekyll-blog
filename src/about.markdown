@@ -4,7 +4,7 @@ title: "About Me"
 date: 2013-09-28 03:21:13
 ---
 
-My name is Zhang Yichao.
+My name is Zhang Yichao. Reach me by [Gmail](mailto:echaozh@gmail.com)
 
 My GitHub acocunt is: [echaozh](https://github.com/echaozh).
 
