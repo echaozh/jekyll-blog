@@ -8,14 +8,18 @@ docTypeHtml $ do
     link ! rel "stylesheet" ! href "/css/syntax.css"
     --  Custom CSS
     link ! rel "stylesheet" ! href "/css/main.css"
+    "{% if page.css %}"
+    link ! rel "stylesheet" ! href "/css/{{ page.css }}.css"
+    "{% endif %}"
   body $ H.div ! class_ "site" $ do
     H.div ! class_ "header" $ do
       h1 ! class_ "title" $ a ! href "/" $ "{{ site.name }}"
       a ! class_ "extra" ! href "/" $ "home"
       a ! class_ "extra" ! href "/about.html" $ "about"
       a ! class_ "extra" ! href "/family.html" $ "family"
+      a ! class_ "extra" ! href "/resumes.html" $ "resumes"
       "{{ content }}"
-    H.div ! class_ "footer" $ H.div ! class_ "contact" $ p $ do
+    H.div ! class_ "footer" $ address ! class_ "contact" $ p $ do
       a ! href "/about" $ "Zhang Yichao"
       br
       a ! href "https://github.com/echaozh" $ "On GitHub"

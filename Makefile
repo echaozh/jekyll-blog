@@ -1,4 +1,5 @@
-names = $(addprefix _layouts/,default post tag) index
+names = $(addprefix _layouts/,default post tag) index \
+		$(addprefix resumes/,resume)
 hss = $(addsuffix .hs,$(addprefix html-build/,$(names)))
 hss_dirs = $(sort $(dir $(hss)))
 htmls = $(addsuffix .html,$(addprefix src/,$(names)))
@@ -28,4 +29,4 @@ site: $(htmls)
 	jekyll build
 
 serve: site
-	jekyll serve
+	jekyll serve --watch

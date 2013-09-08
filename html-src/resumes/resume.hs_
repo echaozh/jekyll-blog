@@ -1,0 +1,75 @@
+docTypeHtml $ do
+  H.head $ do
+    meta ! charset "utf-8"
+    meta ! httpEquiv "X-UA-Compatible" ! content "IE=edge,chrome=1"
+    H.title "Zhang Yichao's Resume"
+    meta ! name "viewport" ! content "width=device-width"
+    link ! rel "stylesheet" ! href "/css/resume.css"
+
+  body $ do
+    h1 "Resume"
+    h2 "Zhang Yichao"
+    address $ do
+      "Email: "
+      a' "mailto:echaozh@gmail.com" ! class_ "email" $ "echaozh@gmail.com"
+      br
+      "Blog: "
+      a' "http://www.echaozh.com" ! class_ "blog" $ "www.echaozh.com"
+      br
+      "Cell phone: "
+      H.span ! class_ "cell" $ "+86-13867481012"
+      br
+      "Address: "
+      "Rm 202 Bldg 1 Shengdexinyuan, Hangzhou, Zhejiang, China"
+    hr
+
+    dl $ do
+      dd ! class_ "clear" $ ""
+
+      dt "Work Experience"
+      dd $ do
+        H.span ! class_ "titles"
+          $ "Intern, Software Developer, System Architect"
+        br
+        H.span ! class_ "employerPadding" $ ""
+        H.span ! class_ "employer" $ "Vobile, Inc"
+        H.span ! class_ "period" $ "2005 - Present"
+        ul ! class_ "jobs" $ do
+          li $ do
+            H.span "Design and implement platform for video recognition"
+            p $ do
+              "In charge of the productization of video recognition "
+              "algorithms, the implementation and optimization. The platform "
+              "itself is a distributed system with scalability and "
+              "availability in mind."
+            p "Also write C++/Python libraries to ease the development process."
+      dd ! class_ "clear" $ ""
+
+      dt "Skills"
+      dd $ do
+        "Languages: "
+        H.span ! A.style "font-style: italic"
+          $ "C++/C, Python, Ruby, JavaScript, Bash"
+        br
+        "Distributed system design & construction"
+        br
+        "Problem solving. A drive to solve problems and improve the code."
+      dd ! class_ "clear" $ ""
+
+      dt "Education"
+      dd $ do
+        H.span ! class_ "degree" $ "MS"
+        H.span ! class_ "major" $ "Computer Science"
+        br
+        H.span ! class_ "school" $ "Zhejiang University - China"
+        H.span ! class_ "period" $ "2006 - 2008"
+      dd $ do
+        H.span ! class_ "degree" $ "BS"
+        H.span ! class_ "major" $ "Computer Science"
+        br
+        H.span ! class_ "school" $ "Zhejiang University - China"
+        H.span ! class_ "period" $ "2002 - 2006"
+      dd ! class_ "clear" $ ""
+
+      dt "Interest"
+      dd "Reading, mostly science fiction and high fantasy."
