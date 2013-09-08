@@ -20,7 +20,7 @@ docTypeHtml $ do
       a ! class_ "extra" ! href "/resumes.html" $ "resumes"
       "{{ content }}"
     H.div ! class_ "footer" $ address ! class_ "contact" $ p $ do
-      a ! href "/about" $ "Zhang Yichao"
+      a ! href "/about.html" $ "Zhang Yichao"
       br
       a ! href "https://github.com/echaozh" $ "On GitHub"
       br
