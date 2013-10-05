@@ -43,7 +43,7 @@ docTypeHtml $ do
             p "为提升开发效率，用C++/Python开发底层库。"
       dd ! class_ "clear" $ ""
 
-      dt "Skills"
+      dt "技能"
       dd $ do
         "编程语言: "
         H.span ! A.style "font-style: italic"
@@ -54,7 +54,7 @@ docTypeHtml $ do
         "解决问题。具有解决问题、改进代码的决心和自我驱动力。"
       dd ! class_ "clear" $ ""
 
-      dt "Education"
+      dt "教育背景"
       dd $ do
         H.span ! class_ "degree" $ "硕士"
         H.span ! class_ "major" $ "计算机"

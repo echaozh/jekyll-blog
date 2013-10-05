@@ -1,5 +1,5 @@
 names = $(addprefix _layouts/,default post tag) index \
-		$(addprefix resumes/,resume)
+		$(addprefix resumes/,resume resume-cn)
 hss = $(addsuffix .hs,$(addprefix html-build/,$(names)))
 hss_dirs = $(sort $(dir $(hss)))
 htmls = $(addsuffix .html,$(addprefix src/,$(names)))
