@@ -1,0 +1,73 @@
+docTypeHtml $ do
+  H.head $ do
+    meta ! charset "utf-8"
+    meta ! httpEquiv "X-UA-Compatible" ! content "IE=edge,chrome=1"
+    H.title "张毅超的简历"
+    meta ! name "viewport" ! content "width=device-width"
+    link ! rel "stylesheet" ! href "/css/resume.css"
+
+  body $ do
+    h1 "简历"
+    h2 "张毅超"
+    address $ do
+      "Email: "
+      a' "mailto:echaozh@gmail.com" ! class_ "email" $ "echaozh@gmail.com"
+      br
+      "Blog: "
+      a' "http://www.echaozh.com" ! class_ "blog" $ "www.echaozh.com"
+      br
+      "Cell phone: "
+      H.span ! class_ "cell" $ "+86-13867481012"
+      br
+      "Address: "
+      "浙江杭州盛德欣苑1－202室"
+    hr
+
+    dl $ do
+      dd ! class_ "clear" $ ""
+
+      dt "工作经历"
+      dd $ do
+        H.span ! class_ "titles"
+          $ "实习，研发工程师，系统架构师"
+        br
+        H.span ! class_ "employerPadding" $ ""
+        H.span ! class_ "employer" $ "阜博通"
+        H.span ! class_ "period" $ "2005 － 至今"
+        ul ! class_ "jobs" $ do
+          li $ do
+            H.span "设计开发视频鉴别平台"
+            p $ do
+              "负责视频鉴别平台算法的产品化，其实现及优化。平台本身是一个可伸缩、"
+              "具备高可用性的分布式系统。"
+            p "为提升开发效率，用C++/Python开发底层库。"
+      dd ! class_ "clear" $ ""
+
+      dt "Skills"
+      dd $ do
+        "编程语言: "
+        H.span ! A.style "font-style: italic"
+          $ "C++/C, Python, Ruby, JavaScript, Java, Bash"
+        br
+        "分布式系统开发及搭建。"
+        br
+        "解决问题。具有解决问题、改进代码的决心和自我驱动力。"
+      dd ! class_ "clear" $ ""
+
+      dt "Education"
+      dd $ do
+        H.span ! class_ "degree" $ "硕士"
+        H.span ! class_ "major" $ "计算机"
+        br
+        H.span ! class_ "school" $ "浙江大学"
+        H.span ! class_ "period" $ "2006 - 2008"
+      dd $ do
+        H.span ! class_ "degree" $ "学士"
+        H.span ! class_ "major" $ "计算机"
+        br
+        H.span ! class_ "school" $ "浙江大学"
+        H.span ! class_ "period" $ "2002 - 2006"
+      dd ! class_ "clear" $ ""
+
+      dt "爱好"
+      dd "阅读，科幻及奇幻类作品。"
