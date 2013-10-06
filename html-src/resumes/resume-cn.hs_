@@ -13,13 +13,16 @@ docTypeHtml $ do
       "Email: "
       a' "mailto:echaozh@gmail.com" ! class_ "email" $ "echaozh@gmail.com"
       br
-      "Blog: "
+      "Github帐号:"
+      a' "https://github.com/echaozh" ! class_ "github" $ "https://github.com/echaozh"
+      br
+      "博客: "
       a' "http://www.echaozh.com" ! class_ "blog" $ "www.echaozh.com"
       br
-      "Cell phone: "
+      "手机号码: "
       H.span ! class_ "cell" $ "+86-13867481012"
       br
-      "Address: "
+      "地址: "
       "浙江杭州盛德欣苑1－202室"
     hr
 
@@ -49,9 +52,13 @@ docTypeHtml $ do
         H.span ! A.style "font-style: italic"
           $ "C++/C, Python, Ruby, JavaScript, Java, Bash"
         br
-        "分布式系统开发及搭建。"
+        "分布式系统开发及搭建。对于一致性算法有相关经验。"
+        br
+        "对于关系性和NoSQL数据库有相关经验。"
         br
         "解决问题。具有解决问题、改进代码的决心和自我驱动力。"
+        br
+        "有带领技术团队的经验，并能作出技术决策。"
       dd ! class_ "clear" $ ""
 
       dt "教育背景"
