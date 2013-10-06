@@ -44,7 +44,7 @@ docTypeHtml $ do
               "algorithms, the implementation and optimization. The platform "
               "itself is a distributed system with scalability and "
               "availability in mind."
-            p "Also write C++/Python libraries to ease the development process."
+            p "Write C++/Python libraries to ease the development process."
       dd ! class_ "clear" $ ""
 
       dt "Skills"
@@ -53,9 +53,13 @@ docTypeHtml $ do
         H.span ! A.style "font-style: italic"
           $ "C++/C, Python, Ruby, JavaScript, Bash"
         br
-        "Distributed system design & construction"
+        "Distributed system design & construction. Have experience with consensus protocols."
+        br
+        "Have experience with relational & NoSQL databases."
         br
         "Problem solving. A drive to solve problems and improve the code."
+        br
+        "Tech team leading and decision making."
       dd ! class_ "clear" $ ""
 
       dt "Education"
