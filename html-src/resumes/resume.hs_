@@ -13,6 +13,8 @@ docTypeHtml $ do
       "Email: "
       a' "mailto:echaozh@gmail.com" ! class_ "email" $ "echaozh@gmail.com"
       br
+      "Github Account: "
+      a' "https://github.com/echaozh" ! class_ "github" $ "https://github.com/echaozh"
       "Blog: "
       a' "http://www.echaozh.com" ! class_ "blog" $ "www.echaozh.com"
       br
