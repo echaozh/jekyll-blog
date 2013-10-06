@@ -15,6 +15,7 @@ docTypeHtml $ do
       br
       "Github Account: "
       a' "https://github.com/echaozh" ! class_ "github" $ "https://github.com/echaozh"
+      br
       "Blog: "
       a' "http://www.echaozh.com" ! class_ "blog" $ "www.echaozh.com"
       br
